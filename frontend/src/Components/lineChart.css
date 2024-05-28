@@ -1,0 +1,13 @@
+.reload-button {
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+.reload-button-enabled {
+    cursor: pointer;
+    color: black;
+}
+
+.reload-button-disabled {
+    color: grey;
+}
