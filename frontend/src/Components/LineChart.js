@@ -63,6 +63,7 @@ const LineChart = () => {
         }
     }, [timer]);
 
+    // Fetch live crypto data
     const fetchLiveCryptoData = async () => {
         try {
             const response = await axios.get(
@@ -79,6 +80,7 @@ const LineChart = () => {
         }
     };
 
+    // Fetch graph crypto data
     const fetchGraphCryptoData = async () => {
         try {
             const response = await axios.get(
@@ -116,6 +118,7 @@ const LineChart = () => {
 
     console.log(chartData);
 
+    // Handle reload
     const handleReload = () => {
         setIsReloading(true);
         setTimer(10);
